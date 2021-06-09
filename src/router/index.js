@@ -1,6 +1,12 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
+import PostsIndex from "../views/posts/Index.vue";
+import PostsNew from "../views/posts/New.vue";
+import Sample from "../views/Sample.vue";
+import Signup from "../views/Signup.vue";
+import Login from "../views/Login.vue";
+import Logout from "../views/Logout.vue";
 
 Vue.use(VueRouter);
 
@@ -19,6 +25,38 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
+  {
+    path: "/sample",
+    name: "Sample",
+    component: Sample,
+  },
+  {
+    path: "/signup",
+    name: "signup",
+    component: Signup,
+  },
+  {
+    path: "/login",
+    name: "login",
+    component: Login,
+  },
+  
+  {
+    path: "/logout",
+    name: "logout",
+    component: Logout,
+  },
+  {
+    path: "/posts",
+    name: "posts-index",
+    component: PostsIndex,
+  },
+  {
+    path: "/posts/new",
+    name: "posts-new",
+    component: PostsNew,
+  },
+
 ];
 
 const router = new VueRouter({
