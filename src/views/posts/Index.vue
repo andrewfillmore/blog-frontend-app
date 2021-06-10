@@ -2,9 +2,11 @@
   <div class="posts-index">
     <div v-for="post in posts" v-bind:key="post.id">
       <h2>{{ post.title }}</h2>
-      <img :src="post.image_url" alt="" />
+
+      <img :src="post.image" alt="" />
       <p>Body: {{ post.body }}</p>
-      <p>User{{ post.user_id }}</p>
+      <p>User: {{ post.user_id }}</p>
+      <router-link :to="`/posts/${post.id}`">Go to Post</router-link>
     </div>
   </div>
 </template>

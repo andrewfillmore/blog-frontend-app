@@ -9,6 +9,7 @@
         <label>Email:</label>
         <input type="email" v-model="email" />
       </div>
+      <br />
       <div>
         <label>Password:</label>
         <input type="password" v-model="password" />

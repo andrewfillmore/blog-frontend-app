@@ -17,11 +17,11 @@
         <input type="text" class="form-control" v-model="newPostParams.body" />
       </div>
       <div class="form-group">
-        <label>Image</label>
+        <label>Image Url:</label>
         <input
           type="text"
           class="form-control"
-          v-model="newPostParams.image_url"
+          v-model="newPostParams.image"
         />
       </div>
 
